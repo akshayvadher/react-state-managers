@@ -2,8 +2,12 @@
 
 import { ReactNode, useEffect, useRef } from "react";
 
-const Container = ({ children }: { children: ReactNode }) => {
-  const rendersNo = useRef(0);
+export interface Children {
+  children: ReactNode;
+}
+
+const Container = ({ children }: Children) => {
+  const rendersNo = useRef(1);
   useEffect(() => {
     rendersNo.current = rendersNo.current + 1;
   });
