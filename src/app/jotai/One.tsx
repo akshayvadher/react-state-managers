@@ -4,7 +4,7 @@ import { useCount } from "@/app/jotai/store";
 
 function One() {
   const c = useCount();
-  return <Container>{c}</Container>;
+  return <Container>Count: {c}</Container>;
 }
 
 export default One;

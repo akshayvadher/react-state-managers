@@ -10,7 +10,7 @@ function CountProvider({ children }: Children) {
 
   useEffect(() => {
     setDouble(count * 2);
-  }, [count]);
+  }, [count, setDouble]);
   const increment = () => {
     setCount((count) => count + 1);
   };

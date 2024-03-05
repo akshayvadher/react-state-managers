@@ -1,18 +1,17 @@
 "use client";
 
-import React, { useContext } from "react";
+import React from "react";
 import Container from "@/app/(components)/Container";
 import One from "@/app/context/One";
 import Two from "@/app/context/Two";
-import { CountContext } from "@/app/context/countContext";
+import Three from "@/app/context/Three";
 
 function Page() {
-  const { double } = useContext(CountContext);
   return (
     <Container>
-      Double: {double}
       <One />
       <Two />
+      <Three />
     </Container>
   );
 }

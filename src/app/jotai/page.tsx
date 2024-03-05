@@ -4,15 +4,14 @@ import React from "react";
 import Container from "@/app/(components)/Container";
 import One from "@/app/jotai/One";
 import Two from "@/app/jotai/Two";
-import { useDouble } from "@/app/jotai/store";
+import Three from "@/app/jotai/Three";
 
 function Page() {
-  const double = useDouble();
   return (
     <Container>
-      Double: {double}
       <One />
       <Two />
+      <Three />
     </Container>
   );
 }
