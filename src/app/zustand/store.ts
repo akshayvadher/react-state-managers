@@ -9,7 +9,6 @@ interface CountState {
 const useCountStore = create<CountState>((set) => ({
   count: 0,
   double: 0,
-  even: 0,
   increase: () =>
     set((state) => ({
       count: state.count + 1,

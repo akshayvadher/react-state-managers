@@ -1,10 +1,27 @@
 "use client";
 
-import Container from "@/app/(components)/Container";
-import { useEffect } from "react";
-import { atom, useAtomValue, useSetAtom } from "jotai";
-
+import Link from "next/link";
 
 export default function Home() {
-  return 'yo'
+  return (
+    <main>
+      <div className="flex flex-col p-2">
+        <Link className="hover:underline" href="/context">
+          Context
+        </Link>
+        <Link className="hover:underline" href="/context-better">
+          Context Better
+        </Link>
+        <Link className="hover:underline" href="/jotai">
+          Jotai
+        </Link>
+        <Link className="hover:underline" href="/zustand">
+          Zustand
+        </Link>
+        <Link className="hover:underline" href="/redux">
+          Redux
+        </Link>
+      </div>
+    </main>
+  );
 }
