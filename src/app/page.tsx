@@ -7,6 +7,10 @@ interface LinkItem {
 
 const links: LinkItem[] = [
   {
+    title: "React",
+    path: "/react",
+  },
+  {
     title: "Context",
     path: "/context",
   },
