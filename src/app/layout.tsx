@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
+import Link from "next/link";
 
-const inter = Open_Sans({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +23,14 @@ export default function RootLayout({
         <title>React state managers</title>
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={openSans.className}>
+        <nav>
+          <Link className="p-2 mb-5 hover:underline" href="/">
+            Home
+          </Link>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
