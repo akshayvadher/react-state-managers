@@ -1,26 +1,50 @@
-"use client";
-
 import Link from "next/link";
+
+interface LinkItem {
+  title: string;
+  path: string;
+}
+
+const links: LinkItem[] = [
+  {
+    title: "Context",
+    path: "/context",
+  },
+  {
+    title: "Context Better",
+    path: "/context-better",
+  },
+  {
+    title: "Jotai",
+    path: "/jotai",
+  },
+  {
+    title: "Jotai Worse",
+    path: "/jotai-worse",
+  },
+  {
+    title: "Redux",
+    path: "/redux",
+  },
+  {
+    title: "Zustand",
+    path: "/zustand",
+  },
+];
 
 export default function Home() {
   return (
     <main>
       <div className="flex flex-col p-2">
-        <Link className="hover:underline" href="/context">
-          Context
-        </Link>
-        <Link className="hover:underline" href="/context-better">
-          Context Better
-        </Link>
-        <Link className="hover:underline" href="/jotai">
-          Jotai
-        </Link>
-        <Link className="hover:underline" href="/zustand">
-          Zustand
-        </Link>
-        <Link className="hover:underline" href="/redux">
-          Redux
-        </Link>
+        {links.map((linkItem) => (
+          <Link
+            className="hover:underline"
+            href={linkItem.path}
+            key={linkItem.path}
+          >
+            {linkItem.title}
+          </Link>
+        ))}
       </div>
     </main>
   );
