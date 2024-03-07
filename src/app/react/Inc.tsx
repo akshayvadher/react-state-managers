@@ -1,4 +1,4 @@
-import React, {Dispatch, SetStateAction} from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import Container from "@/app/(components)/Container";
 import Button from "@/app/(components)/Button";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Children } from "@/app/(components)/Container";
 import { CountContext } from "@/app/context/countContext";
 

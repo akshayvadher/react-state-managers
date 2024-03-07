@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Container from "@/app/(components)/Container";
 import Count from "@/app/redux/Count";
 import Inc from "@/app/redux/Inc";

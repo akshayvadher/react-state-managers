@@ -1,4 +1,3 @@
-import React from "react";
 import { Children } from "@/app/(components)/Container";
 
 function H1({ children }: Children) {

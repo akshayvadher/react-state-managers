@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Container from "@/app/(components)/Container";
 import Count from "@/app/zustand/Count";
 import Inc from "@/app/zustand/Inc";

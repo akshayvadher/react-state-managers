@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "@/app/(components)/Container";
 import { useDouble } from "@/app/zustand/store";
 

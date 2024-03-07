@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Container from "@/app/(components)/Container";
 import { CountContext } from "@/app/context/countContext";
 

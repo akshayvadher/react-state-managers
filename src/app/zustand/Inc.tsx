@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "@/app/(components)/Container";
 import Button from "@/app/(components)/Button";
 import { useIncrement } from "@/app/zustand/store";

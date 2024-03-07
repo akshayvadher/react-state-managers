@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "@/app/(components)/Container";
 import { useAtom } from "jotai";
 import { count } from "@/app/jotai-worse/store";

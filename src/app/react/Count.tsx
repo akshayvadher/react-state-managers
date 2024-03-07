@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "@/app/(components)/Container";
 
 function Count({ count }: { count: number }) {

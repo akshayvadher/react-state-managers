@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "@/app/(components)/Container";
 import { useAtom } from "jotai";
 import { count } from "@/app/jotai-worse/store";
