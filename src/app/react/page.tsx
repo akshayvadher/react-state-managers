@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import Container from "@/app/(components)/Container";
-import One from "@/app/react/One";
-import Two from "@/app/react/Two";
-import Three from "@/app/react/Three";
+import Count from "@/app/react/Count";
+import Inc from "@/app/react/Inc";
+import Double from "@/app/react/Double";
 import H1 from "@/app/(components)/H1";
 
 function Page() {
@@ -12,9 +12,9 @@ function Page() {
   return (
     <Container>
       <H1>React</H1>
-      <One count={count} />
-      <Two setCount={setCount} />
-      <Three count={count} />
+      <Count count={count} />
+      <Double count={count} />
+      <Inc setCount={setCount} />
     </Container>
   );
 }

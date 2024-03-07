@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import Container from "@/app/(components)/Container";
 import Button from "@/app/(components)/Button";
-import { CountContext } from "@/app/context/countContext";
+import { useIncrement } from "@/app/jotai/store";
 
-function Two() {
-  const { increment } = useContext(CountContext);
+function Inc() {
+  const increment = useIncrement();
   return (
     <Container>
       <Button onClick={increment} />
@@ -12,4 +12,4 @@ function Two() {
   );
 }
 
-export default Two;
+export default Inc;

@@ -3,7 +3,7 @@ import Container from "@/app/(components)/Container";
 import Button from "@/app/(components)/Button";
 import { CountContext } from "@/app/context/countContext";
 
-function Two() {
+function Inc() {
   const { increment } = useContext(CountContext);
   return (
     <Container>
@@ -12,4 +12,4 @@ function Two() {
   );
 }
 
-export default Two;
+export default Inc;

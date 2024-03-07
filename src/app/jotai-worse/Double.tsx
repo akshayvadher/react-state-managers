@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Container from "@/app/(components)/Container";
+import { useAtom } from "jotai";
+import { count } from "@/app/jotai-worse/store";
 
-function Three({ count }: { count: number }) {
+function Double() {
+  const [c] = useAtom(count);
   const [double, setDouble] = useState(0);
   useEffect(() => {
-    setDouble(count * 2);
-  }, [count]);
+    setDouble(c * 2);
+  }, [c]);
   return <Container>Double: {double}</Container>;
 }
 
-export default Three;
+export default Double;

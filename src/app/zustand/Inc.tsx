@@ -3,7 +3,7 @@ import Container from "@/app/(components)/Container";
 import Button from "@/app/(components)/Button";
 import { useIncrement } from "@/app/zustand/store";
 
-function Two() {
+function Inc() {
   const increment = useIncrement();
   return (
     <Container>
@@ -12,4 +12,4 @@ function Two() {
   );
 }
 
-export default Two;
+export default Inc;

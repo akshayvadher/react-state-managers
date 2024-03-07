@@ -4,7 +4,7 @@ import Button from "@/app/(components)/Button";
 import { useAtom } from "jotai";
 import { count } from "@/app/jotai-worse/store";
 
-function Two() {
+function Inc() {
   const [, setCount] = useAtom(count);
   const handleOnClick = () => {
     setCount((count) => count + 1);
@@ -16,4 +16,4 @@ function Two() {
   );
 }
 
-export default Two;
+export default Inc;

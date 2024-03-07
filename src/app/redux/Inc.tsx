@@ -4,7 +4,7 @@ import Button from "@/app/(components)/Button";
 import { useDispatch } from "react-redux";
 import { incremented } from "@/app/redux/store";
 
-function Two() {
+function Inc() {
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(incremented());
@@ -16,4 +16,4 @@ function Two() {
   );
 }
 
-export default Two;
+export default Inc;

@@ -15,10 +15,6 @@ const links: LinkItem[] = [
     path: "/context",
   },
   {
-    title: "Context Better",
-    path: "/context-better",
-  },
-  {
     title: "Jotai",
     path: "/jotai",
   },

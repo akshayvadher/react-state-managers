@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "@/app/(components)/Container";
-import { useDouble } from "@/app/zustand/store";
+import { useDouble } from "@/app/jotai/store";
 
-function Three() {
+function Double() {
   const c = useDouble();
   return <Container>Double: {c}</Container>;
 }
 
-export default Three;
+export default Double;
