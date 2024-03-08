@@ -1,7 +1,7 @@
 import Container from "@/app/(components)/Container";
 import Button from "@/app/(components)/Button";
 import { useAtom } from "jotai";
-import { count } from "@/app/jotai-worse/store";
+import { count } from "@/app/jotai-rookie/store";
 
 function Inc() {
   const [, setCount] = useAtom(count);

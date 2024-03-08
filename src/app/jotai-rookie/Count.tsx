@@ -1,6 +1,6 @@
 import Container from "@/app/(components)/Container";
 import { useAtom } from "jotai";
-import { count } from "@/app/jotai-worse/store";
+import { count } from "@/app/jotai-rookie/store";
 
 function Count() {
   const [c] = useAtom(count);
