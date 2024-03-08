@@ -15,12 +15,16 @@ const links: LinkItem[] = [
     path: "/context",
   },
   {
+    title: "Jotai Rookie",
+    path: "/jotai-rookie",
+  },
+  {
     title: "Jotai",
     path: "/jotai",
   },
   {
-    title: "Jotai Worse",
-    path: "/jotai-worse",
+    title: "Jotai Persist",
+    path: "/jotai-persist",
   },
   {
     title: "Redux",
@@ -29,6 +33,10 @@ const links: LinkItem[] = [
   {
     title: "Zustand",
     path: "/zustand",
+  },
+  {
+    title: "React Query",
+    path: "/react-query",
   },
 ];
 
