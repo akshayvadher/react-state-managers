@@ -6,6 +6,7 @@ import Count from "@/app/react/Count";
 import Inc from "@/app/react/Inc";
 import Double from "@/app/react/Double";
 import H1 from "@/app/(components)/H1";
+import DoubleLessRender from "@/app/react/DoubleLessRender";
 
 function Page() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function Page() {
       <H1>React</H1>
       <Count count={count} />
       <Double count={count} />
+      <DoubleLessRender count={count} />
       <Inc setCount={setCount} />
     </Container>
   );
