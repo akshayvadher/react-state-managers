@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import Container from "@/app/(components)/Container";
-import { CountContext } from "@/app/context/countContext";
+import { useCountContext } from "@/app/context/CountProvider";
 
 function Count() {
-  const { count } = useContext(CountContext);
+  const { count } = useCountContext();
   return <Container>Count: {count}</Container>;
 }
 

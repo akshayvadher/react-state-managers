@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import Container from "@/app/(components)/Container";
-import { CountContext } from "@/app/context/countContext";
+import { useCountContext } from "@/app/context/CountProvider";
 
 function Double() {
-  const { double } = useContext(CountContext);
+  const { double } = useCountContext();
   return <Container>Double: {double}</Container>;
 }
 

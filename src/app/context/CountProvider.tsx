@@ -1,8 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { Children } from "@/app/(components)/Container";
-import { CountContext } from "@/app/context/countContext";
+
+const CountContext = createContext({
+  count: 0,
+  double: 0,
+  increment: () => {},
+});
 
 function CountProvider({ children }: Children) {
   const [count, setCount] = useState(0);
@@ -22,3 +27,4 @@ function CountProvider({ children }: Children) {
 }
 
 export default CountProvider;
+export const useCountContext = () => useContext(CountContext);

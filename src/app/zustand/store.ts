@@ -1,12 +1,15 @@
 import { create } from "zustand";
 
-interface CountState {
+interface State {
   count: number;
   double: number;
+}
+
+interface Actions {
   increase: () => void;
 }
 
-const useCountStore = create<CountState>((set) => ({
+const useCountStore = create<State & Actions>((set) => ({
   count: 0,
   double: 0,
   increase: () =>
