@@ -1,12 +1,10 @@
 import { useMutation } from "@tanstack/react-query";
-import axios from "axios";
-import { delay, TODO_URL } from "@/app/react-query/hooks/common";
 import { Status } from "@/app/react-query/todo.dto";
+import api from "@/app/react-query/hooks/api";
 
 const toggleTodoFn = async (form: { id: number; status: Status }) => {
-  await delay(1000);
-  return await axios
-    .patch(`${TODO_URL}/${form.id}`, { status: form.status })
+  return await api
+    .patch(`/${form.id}`, { status: form.status })
     .then((res) => res.data);
 };
 

@@ -1,14 +1,12 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import axios from "axios";
-import { delay, TODO_URL } from "@/app/react-query/hooks/common";
 import { Status } from "@/app/react-query/todo.dto";
+import api from "@/app/react-query/hooks/api";
 
 const addToDoFn = async (body: ToDoAddRequestDto) => {
   if (!body.status) {
     body.status = Status.PENDING;
   }
-  await delay(1000);
-  return await axios.post(TODO_URL, body).then((res) => res.data);
+  return await api.post("", body).then((res) => res.data);
 };
 
 export interface ToDoAddRequestDto {

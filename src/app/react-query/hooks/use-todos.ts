@@ -1,11 +1,9 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { ToDoDto } from "@/app/react-query/todo.dto";
-import axios from "axios";
-import { delay, TODO_URL } from "@/app/react-query/hooks/common";
+import api from "@/app/react-query/hooks/api";
 
 const getTodosFn = async () => {
-  await delay(1000);
-  return await axios.get(TODO_URL).then((res) => res.data);
+  return await api.get("").then((res) => res.data);
 };
 
 const TODOS_KEY = "todos";
