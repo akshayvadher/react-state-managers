@@ -1,16 +1,10 @@
 import React, { FormEvent, useState } from "react";
 import Container from "@/app/(components)/Container";
 import { useAddTodo } from "@/app/react-query/hooks/use-add-todo";
-import { useQueryClient } from "@tanstack/react-query";
 
 const AddToDo = () => {
   const [value, setValue] = useState("");
-  const queryClient = useQueryClient();
-  const { mutate, isPending } = useAddTodo({
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["todos"] });
-    },
-  });
+  const { mutate, isPending } = useAddTodo();
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.currentTarget.value);
   };
