@@ -11,6 +11,10 @@ const links: LinkItem[] = [
     path: "/react",
   },
   {
+    title: "React Less Render",
+    path: "/react-less-render",
+  },
+  {
     title: "Context",
     path: "/context",
   },
