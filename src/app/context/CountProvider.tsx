@@ -9,7 +9,7 @@ const CountContext = createContext({
   increment: () => {},
 });
 
-function CountProvider({ children }: Children) {
+function CountProvider({ children }: Readonly<Children>) {
   const [count, setCount] = useState(0);
   const [double, setDouble] = useState(0);
 

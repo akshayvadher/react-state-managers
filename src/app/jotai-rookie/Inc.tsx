@@ -6,7 +6,7 @@ import { count } from "@/app/jotai-rookie/store";
 function Inc() {
   const [, setCount] = useAtom(count);
   const handleOnClick = () => {
-    setCount((count) => count + 1);
+    setCount((count) => count + 1000);
   };
   return (
     <Container>

@@ -2,7 +2,9 @@ import React, { Dispatch, SetStateAction } from "react";
 import Container from "@/app/(components)/Container";
 import Button from "@/app/(components)/Button";
 
-function Inc({ setCount }: { setCount: Dispatch<SetStateAction<number>> }) {
+function Inc({
+  setCount,
+}: Readonly<{ setCount: Dispatch<SetStateAction<number>> }>) {
   const increment = () => {
     setCount((count) => count + 1);
   };

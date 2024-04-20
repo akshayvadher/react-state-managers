@@ -3,6 +3,7 @@ import { useCountContext } from "@/app/context/CountProvider";
 
 function Count() {
   const { count } = useCountContext();
+
   return <Container>Count: {count}</Container>;
 }
 
